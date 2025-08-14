@@ -1,0 +1,11 @@
+[Unit]
+Description=Scheduled backup service for home server
+After=network.target docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/backup.sh
+
+[Install]
+WantedBy=multi-user.target

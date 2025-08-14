@@ -1,0 +1,18 @@
+{
+  "home_dir": "/home/yakoo",
+  "include_dirs": ["/home/yakoo"],
+  "extra_dirs": [],
+  "copy_nginx": true,
+  "copy_letsencrypt": true,
+  "output_dir": "/var/backups/backup-service",
+  "max_file_size_mb": 100,
+  "archive_password": "CHANGE_ME_secure_password",
+  "rotate_keep": 3,
+  "postgres": {
+    "enabled": false,
+    "container_name": "postgres",
+    "user": "postgres",
+    "databases": []
+  },
+  "tmp_base": "/tmp/backup-service"
+}
