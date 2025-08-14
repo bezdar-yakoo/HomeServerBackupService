@@ -3,7 +3,7 @@ set -euo pipefail
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 SERVICE_DEST="/etc/systemd/system/backup.service"
 BIN_DEST="/usr/local/bin/backup.sh"
-INSTALL_DIR="/opt/backup-service"
+INSTALL_DIR="/home/yakoo/HomeServerBackupService"
 SERVICE_USER="backup"
 
 # require jq

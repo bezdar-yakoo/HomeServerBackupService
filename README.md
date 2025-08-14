@@ -22,15 +22,19 @@ git clone https://github.com/bezdar-yakoo/HomeServerBackupService.git
 cd HomeServerBackupService
 ```
 
-## Отредактировать конфиг
+## Отредактировать конфиг и проверить синтаксис
 
 ```bash
 nano config.json
+jq . config.json
 ```
+
+
 
 ## Установить сервис
 
 ```bash
+chmod +x install_service.sh
 sudo ./install_service.sh
 ```
 
