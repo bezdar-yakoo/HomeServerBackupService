@@ -14,5 +14,8 @@
     "user": "postgres",
     "databases": []
   },
-  "tmp_base": "/tmp/backup-service"
+  "tmp_base": "/tmp/backup-service",
+   "timer": {
+    "on_calendar": "weekly"
+  }
 }
